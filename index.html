@@ -107,10 +107,9 @@
                     <h3>Corte Clásico</h3>
                     <p>Corte tradicional con técnicas profesionales, perfecto para un look elegante y atemporal.</p>
                     <div class="service-price">Desde $25.000 COP</div>
-                    <a href="#contacto" class="service-link">
-                        Agendar
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
+                        <a href="#contacto" class="service-link service-btn" data-servicio="Corte Clásico">
+                            Agendar
+                        </a>
                 </div>
                 <div class="service-card featured">
                     <div class="service-badge">
@@ -123,10 +122,9 @@
                     <h3>Fade / Degradado</h3>
                     <p>Degradados perfectos, desde low fade hasta high fade, con acabados impecables.</p>
                     <div class="service-price">Desde $35.000 COP</div>
-                    <a href="#contacto" class="service-link">
-                        Agendar
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
+                        <a href="#contacto" class="service-link service-btn" data-servicio="Fade / Degradado">
+                            Agendar
+                        </a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
@@ -135,10 +133,9 @@
                     <h3>Arreglo de Barba</h3>
                     <p>Perfilado, recorte y diseño de barba con toallas calientes y productos especializados.</p>
                     <div class="service-price">Desde $20.000 COP</div>
-                    <a href="#contacto" class="service-link">
-                        Agendar
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
+                        <a href="#contacto" class="service-link service-btn" data-servicio="Arreglo de Barba">
+                            Agendar
+                        </a>
                 </div>
             </div>
         </div>
@@ -224,7 +221,7 @@
                             <i class="fas fa-phone-alt"></i>
                         </div>
                         <h4>Contacto</h4>
-                        <p>+57 300 123 4567<br>contacto@blackblade.com</p>
+                        <p>+57 3249498311<br>contacto@blackblade.com</p>
                     </div>
                 </div>
                 <div class="location-map">
@@ -272,24 +269,26 @@
                             Formulario de reserva
                         </h4>
                         <p>Completa tus datos y te contactamos</p>
-                        <form>
+                        <form id="form-agenda">
                             <div class="input-group">
                                 <i class="fas fa-user"></i>
-                                <input type="text" placeholder="Tu nombre" required>
+                                <input type="text" id="nombre" placeholder="Tu nombre" required>
                             </div>
                             <div class="input-group">
                                 <i class="fas fa-phone"></i>
-                                <input type="tel" placeholder="Teléfono" required>
+                                <input type="tel" id="telefono" placeholder="Teléfono" required>
                             </div>
                             <div class="input-group">
                                 <i class="fas fa-cut"></i>
-                                <select>
-                                    <option>Selecciona un servicio</option>
-                                    <option>Corte Clásico</option>
-                                    <option>Fade / Degradado</option>
-                                    <option>Arreglo de Barba</option>
-                                    <option>Combo Completo</option>
-                                </select>
+                                    <select id="servicio">
+                                        <option value="">Selecciona un servicio</option>
+                                        <option value="Corte Clásico">Corte Clásico</option>
+                                        <option value="Fade / Degradado">Fade / Degradado</option>
+                                        <option value="Arreglo de Barba">Arreglo de Barba</option>
+                                        <option value="Combo Completo">Combo Completo</option>
+                                    </select>
+
+
                             </div>
                             <div class="input-group">
                                 <i class="fas fa-calendar-day"></i>
@@ -340,4 +339,5 @@
     </footer>
 
 </body>
+<script src="./docs.js/app.js"></script>
 </html>
