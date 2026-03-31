@@ -1,4 +1,8 @@
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -442,6 +446,7 @@ body {
     border: 1px solid rgba(212, 175, 55, 0.2);
     opacity: 0;
     transition: opacity 0.3s;
+    pointer-events: none; /* ← agrega esto */
 }
 
 .team-card:hover::after {
@@ -830,4 +835,14 @@ body {
         flex-wrap: wrap;
         justify-content: center;
     }
+}
+/* arreglo del boton de agendar en la card de servicios */
+
+
+.btn-secondary-call {
+    cursor: pointer;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
 }
